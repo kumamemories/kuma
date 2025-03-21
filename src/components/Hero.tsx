@@ -46,9 +46,14 @@ const Hero = () => {
           <p className="text-gray-700 text-lg mb-8 max-w-lg">
             Capture and organize family stories effortlessly. Join early access to shape Kuma and preserve your loved ones' voices forever.
           </p>
-          <button className="bg-kuma-primary text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold">
+          <a 
+            href="https://form.jotform.com/250694302591356"
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="inline-block bg-kuma-primary text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold"
+          >
             Sign Up for Early Access
-          </button>
+          </a>
         </div>
 
         <div className="relative z-10">

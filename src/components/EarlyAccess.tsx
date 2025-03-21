@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/components/ui/use-toast';
 
@@ -53,7 +53,6 @@ const CheckItem: React.FC<CheckItemProps> = ({ text, delay }) => {
 };
 
 const EarlyAccess = () => {
-  const [email, setEmail] = useState('');
   const { toast } = useToast();
   const sectionRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -89,24 +88,6 @@ const EarlyAccess = () => {
       }
     };
   }, []);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (email) {
-      toast({
-        title: "Success!",
-        description: "You've been added to our early access list.",
-      });
-      setEmail('');
-    } else {
-      toast({
-        title: "Error",
-        description: "Please enter a valid email address.",
-        variant: "destructive",
-      });
-    }
-  };
 
   return (
     <section 
@@ -152,25 +133,14 @@ const EarlyAccess = () => {
               Capture and organize family stories effortlessly. Join early access to shape Kuma and preserve your loved ones' voices forever.
             </p>
             
-            <form onSubmit={handleSubmit} className="space-y-4 max-w-lg">
-              <div>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-3 rounded-lg border border-kuma-light/50 focus:outline-none focus:ring-2 focus:ring-kuma-primary/50 transition-all duration-200"
-                  required
-                />
-              </div>
-              
-              <button 
-                type="submit"
-                className="bg-kuma-primary text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-[1.02] shadow-lg font-semibold w-full md:w-auto"
-              >
-                Sign Up for Early Access
-              </button>
-            </form>
+            <a 
+              href="https://form.jotform.com/250694302591356" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-kuma-primary text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-[1.02] shadow-lg font-semibold"
+            >
+              Sign Up for Early Access
+            </a>
           </div>
         </div>
       </div>

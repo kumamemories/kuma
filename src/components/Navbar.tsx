@@ -57,9 +57,14 @@ const Navbar = () => {
           </a>
         </div>
         
-        <button className="bg-kuma-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg">
+        <a 
+          href="https://form.jotform.com/250694302591356"
+          target="_blank"
+          rel="noopener noreferrer" 
+          className="bg-kuma-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
+        >
           Sign Up
-        </button>
+        </a>
       </div>
     </nav>
   );
