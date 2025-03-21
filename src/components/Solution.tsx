@@ -112,16 +112,16 @@ const Solution = () => {
               <div className="relative z-10 flex space-x-4">
                 <div className="shadow-xl rounded-3xl overflow-hidden border-2 border-white/50 transform transition-all duration-300 hover:scale-[1.02] hover:-rotate-1">
                   <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" 
-                    alt="Kuma mobile app screenshot" 
+                    src="/lovable-uploads/0019a023-d35d-415a-ad63-c7f24ac23e43.png" 
+                    alt="Kuma app question interface" 
                     className="w-full h-auto"
                     loading="lazy"
                   />
                 </div>
                 <div className="shadow-xl rounded-3xl overflow-hidden border-2 border-white/50 transform transition-all duration-300 hover:scale-[1.02] hover:rotate-1 mt-12">
                   <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" 
-                    alt="Kuma mobile app screenshot" 
+                    src="/lovable-uploads/23901b5a-c6e8-4e2c-8f6c-9aec7bc20610.png" 
+                    alt="Kuma app story recording interface" 
                     className="w-full h-auto"
                     loading="lazy"
                   />
