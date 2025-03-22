@@ -10,8 +10,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // Set base to '/' for production, and to repo name for GitHub Pages
-  base: mode === 'production' ? './' : '/',
+  // Set base to '/kuma/' for production, and to '/' for development
+  base: mode === 'production' ? '/kuma/' : '/',
   plugins: [
     react(),
     mode === 'development' &&

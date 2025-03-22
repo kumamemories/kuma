@@ -9,8 +9,8 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Get base URL from Vite or default to '/'
-const baseUrl = import.meta.env.BASE_URL || '/';
+// Get base URL from Vite environment
+const baseUrl = import.meta.env.BASE_URL;
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
