@@ -1,7 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
-import { useToast } from '@/components/ui/use-toast';
 
 interface CheckItemProps {
   text: string;
@@ -39,21 +38,20 @@ const CheckItem: React.FC<CheckItemProps> = ({ text, delay }) => {
     <div 
       ref={itemRef}
       className={cn(
-        "flex items-center space-x-3 mb-5 transition-all duration-500 ease-out opacity-0 translate-y-5"
+        "flex items-center space-x-3 mb-4 sm:mb-5 transition-all duration-500 ease-out opacity-0 translate-y-5"
       )}
     >
-      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-kuma-light/50 flex items-center justify-center">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-kuma-light/50 flex items-center justify-center">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-16 sm:h-16">
           <path d="M9 16.2L4.8 12L3.4 13.4L9 19L21 7L19.6 5.6L9 16.2Z" fill="#9475FF"/>
         </svg>
       </div>
-      <p className="text-gray-700">{text}</p>
+      <p className="text-sm sm:text-base text-gray-700">{text}</p>
     </div>
   );
 };
 
 const EarlyAccess = () => {
-  const { toast } = useToast();
   const sectionRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -93,16 +91,16 @@ const EarlyAccess = () => {
     <section 
       id="early-access" 
       ref={sectionRef}
-      className="py-24 bg-kuma-primary/10"
+      className="py-16 sm:py-20 md:py-24 bg-kuma-primary/10"
     >
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div className="z-10">
             <div 
               ref={cardRef}
-              className="glass-card p-10 border border-kuma-light/30 transition-all duration-700 ease-out opacity-0 translate-y-10"
+              className="glass-card p-6 sm:p-8 md:p-10 border border-kuma-light/30 transition-all duration-700 ease-out opacity-0 translate-y-10"
             >
-              <h3 className="text-2xl font-bold mb-8 text-kuma-primary">EARLY ACCESS INCLUDES</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-kuma-primary">EARLY ACCESS INCLUDES</h3>
               
               <div className="space-y-2">
                 <CheckItem 
@@ -124,12 +122,12 @@ const EarlyAccess = () => {
           <div>
             <h2 
               ref={titleRef}
-              className="text-3xl md:text-4xl font-bold mb-8 text-kuma-primary transition-all duration-700 ease-out opacity-0 translate-y-10"
+              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-kuma-primary transition-all duration-700 ease-out opacity-0 translate-y-10"
             >
               Join Kuma
             </h2>
             
-            <p className="text-gray-700 text-lg mb-8 max-w-lg">
+            <p className="text-gray-700 text-base sm:text-lg mb-6 sm:mb-8 max-w-lg">
               Capture and organize family stories effortlessly. Join early access to shape Kuma and preserve your loved ones' voices forever.
             </p>
             
@@ -137,7 +135,7 @@ const EarlyAccess = () => {
               href="https://form.jotform.com/250694302591356" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block bg-kuma-primary text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-[1.02] shadow-lg font-semibold"
+              className="inline-block bg-kuma-primary text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-[1.02] shadow-lg font-semibold text-sm sm:text-base"
             >
               Sign Up for Early Access
             </a>
