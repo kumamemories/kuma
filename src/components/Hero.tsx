@@ -60,7 +60,7 @@ const Hero = () => {
           <div className="relative rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl">
             <div className="absolute inset-0 border-2 border-kuma-light rounded-3xl z-20 pointer-events-none" />
             <img 
-              src="public/lovable-uploads/image 29.png" 
+              src="/lovable-uploads/gramapic.png" 
               alt="Grandmother and granddaughter looking at smartphone" 
               className="w-full h-auto rounded-3xl z-10"
               loading="lazy"
