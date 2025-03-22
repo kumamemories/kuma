@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <img 
-            src="public/lovable-uploads/Group 427320590 (1).png" 
+            src="https://postimg.cc/V0jVZdG6" 
             alt="Kuma Logo" 
             className="w-7 h-7 sm:w-8 sm:h-8"
           />
