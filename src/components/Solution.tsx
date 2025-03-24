@@ -112,23 +112,21 @@ const Solution = () => {
           >
             <div className="relative">
               <div className="absolute -top-6 -left-6 w-40 sm:w-64 h-40 sm:h-64 rounded-full bg-kuma-light/20 filter blur-3xl z-0"></div>
-              
-              <div className="relative z-10 flex flex-col sm:flex-row gap-6">
-                <div className="w-full sm:w-3/5 bg-white rounded-3xl shadow-xl overflow-hidden border border-kuma-light/30 transform transition-all duration-300 hover:scale-[1.02] hover:-rotate-1">
+              <div className="relative z-10 flex space-x-3 sm:space-x-4">
+                <div className="shadow-xl rounded-3xl overflow-hidden border-2 border-white/50 transform transition-all duration-300 hover:scale-[1.02] hover:-rotate-1">
                   <img 
                     src={`${baseUrl}lovable-uploads/0019a023-d35d-415a-ad63-c7f24ac23e43.png`}
                     alt="Kuma app question interface" 
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto"
                     loading="lazy"
                   />
                 </div>
-                
                 {!isMobile && (
-                  <div className="w-full sm:w-2/5 mt-0 bg-white rounded-3xl shadow-xl overflow-hidden border border-kuma-light/30 transform transition-all duration-300 hover:scale-[1.02] hover:rotate-1">
+                  <div className="shadow-xl rounded-3xl overflow-hidden border-2 border-white/50 transform transition-all duration-300 hover:scale-[1.02] hover:rotate-1 mt-12">
                     <img 
                       src={`${baseUrl}lovable-uploads/23901b5a-c6e8-4e2c-8f6c-9aec7bc20610.png`}
                       alt="Kuma app story recording interface" 
-                      className="w-full h-auto object-cover"
+                      className="w-full h-auto"
                       loading="lazy"
                     />
                   </div>
