@@ -8,6 +8,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const baseUrl = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +38,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <img 
-            src="https://postimg.cc/V0jVZdG6" 
+            src={`${baseUrl}lovable-uploads/kumalogo.png`}
             alt="Kuma Logo" 
             className="w-7 h-7 sm:w-8 sm:h-8"
           />

@@ -58,6 +58,7 @@ const Solution = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const isMobile = useIsMobile();
+  const baseUrl = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -114,7 +115,7 @@ const Solution = () => {
               <div className="relative z-10 flex space-x-3 sm:space-x-4">
                 <div className="shadow-xl rounded-3xl overflow-hidden border-2 border-white/50 transform transition-all duration-300 hover:scale-[1.02] hover:-rotate-1">
                   <img 
-                    src="/lovable-uploads/0019a023-d35d-415a-ad63-c7f24ac23e43.png" 
+                    src={`${baseUrl}lovable-uploads/0019a023-d35d-415a-ad63-c7f24ac23e43.png`}
                     alt="Kuma app question interface" 
                     className="w-full h-auto"
                     loading="lazy"
@@ -123,7 +124,7 @@ const Solution = () => {
                 {!isMobile && (
                   <div className="shadow-xl rounded-3xl overflow-hidden border-2 border-white/50 transform transition-all duration-300 hover:scale-[1.02] hover:rotate-1 mt-12">
                     <img 
-                      src="/lovable-uploads/23901b5a-c6e8-4e2c-8f6c-9aec7bc20610.png" 
+                      src={`${baseUrl}lovable-uploads/23901b5a-c6e8-4e2c-8f6c-9aec7bc20610.png`}
                       alt="Kuma app story recording interface" 
                       className="w-full h-auto"
                       loading="lazy"
